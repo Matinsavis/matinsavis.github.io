@@ -4,7 +4,9 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
+.H1 {
+    margin-top: 20px;
+}
 /* Top Navigation Bar */
 .top-nav {
     display: flex;
