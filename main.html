@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        
-    </title>
+    <title>MatinSunSet</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    
+
+    <nav class="top-nav">
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+        <div class="nav-title">Welcome</div>
+    </nav>
+
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="Matinsavis.github.io/Main">Home</a></li>
+            <li><a href="Matinsavis.github.io/About">About</a></li>
+            <li><a href="Matinsavis.github.io/Media">Media</a></li>
+            <li><a href="Matinsavis.github.io/Contact">Contact</a></li>
+        </ul>
+    </aside>
+    <script>
+        function toggleSidebar() {
+            sidebar.classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
