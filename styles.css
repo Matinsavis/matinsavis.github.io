@@ -4,12 +4,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-.H1 {
-    background-color: bisque;
-  padding-top: 100px;
-    color: #333;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+
 /* Top Navigation Bar */
 .top-nav {
     display: flex;
