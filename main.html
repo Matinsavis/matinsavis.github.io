@@ -7,25 +7,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <H1 class="H1">Salam Man Matin Hastam.</H1>
-    <p></p>
+    <div class="navbar">
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <div>
+            <a href="">AmirSunrise</a>
+            
+        </div>
+        <img class="logo" src="https://agsa.arsacia.ir/img/boatlic.png" alt="Salam">
+        <div>
+            <a href="">GitHub</a>
+        </div>
+    </div>
 
-    <nav class="top-nav">
-        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
-        <div class="nav-title">Welcome</div>
-    </nav>
 
-    <aside class="sidebar" id="sidebar">
-        <ul>
-            <li><a href="Matinsavis.github.io/Main">Home</a></li>
-            <li><a href="Matinsavis.github.io/About">About</a></li>
-            <li><a href="Matinsavis.github.io/Media">Media</a></li>
-            <li><a href="Matinsavis.github.io/Contact">Contact</a></li>
-        </ul>
-    </aside>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <div class="sidebar" id="sidebar">
+        <a href="">About</a>
+        <a href="">Media</a>
+        <a href="">Collab</a>
+        <a href="">Support</a>
+    </div>
+
     <script>
-        function toggleSidebar() {
-            sidebar.classList.toggle("active");
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('active');
+            overlay.classList.toggle('active');
         }
     </script>
 </body>
